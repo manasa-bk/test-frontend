@@ -1,0 +1,6 @@
+
+- name: Run pg_upgrade command
+  become: yes
+  become_user: postgres
+  ansible.builtin.command: /usr/lib/postgresql/{{ POSTGRESQL_VERSION }}/bin/pg_upgrade -b /usr/lib/postgresql/{{ OLD_POSTGRESQL_VERSION }}/bin -B /usr/lib/postgresql/{{ POSTGRESQL_VERSION }}/bin -d /newpg/data -D /newpg/postgres-{{ POSTGRESQL_VERSION }} --jobs=2 --link
+  args:
