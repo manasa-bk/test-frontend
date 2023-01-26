@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with: 
-          repository: manasa-bk/test-frontend1
+          repository: manasa-bk/test-mm-frontend
           token: ${{ secrets.PRIVATE_TOKEN_GITHUB }}
           submodules: true
 
