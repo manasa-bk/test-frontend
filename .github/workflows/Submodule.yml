@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with: 
-          repository: manasa-bk/test-frontend
+          repository: manasa-bk/test-frontend1
           token: ${{ secrets.PRIVATE_TOKEN_GITHUB }}
           submodules: true
 
